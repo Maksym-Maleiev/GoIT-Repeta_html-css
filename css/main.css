@@ -1,0 +1,44 @@
+.list {
+  list-style: none;
+}
+
+/* Hero section */
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Features section */
+
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Examples section */
+
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-text-color);
+}
+
+.button.secondary {
+  color: var(--accent-text-color);
+  background-color: var(--primary-white-color);
+}
