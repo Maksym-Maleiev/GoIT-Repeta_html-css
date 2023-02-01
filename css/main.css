@@ -23,9 +23,11 @@ body {
 
 .logo {
   color: var(--title-text-color);
+
   font-family: Comfortaa, cursive;
   font-size: 28px;
   line-height: 1.14;
+  text-decoration: none;
 }
 
 .logo:hover,
@@ -37,9 +39,11 @@ body {
 
 .site-nav .link {
   color: var(--accent-text-color);
+
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -75,6 +79,11 @@ body {
   text-align: center;
 }
 
+.section-description {
+  font-size: 36px;
+  line-height: 1.39;
+}
+
 /* Features section */
 
 .feature-list .title,
@@ -94,6 +103,7 @@ body {
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .button.primary {
