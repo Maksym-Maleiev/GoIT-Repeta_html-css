@@ -30,7 +30,7 @@ body {
   width: 1440px;
   padding-left: 20px;
   padding-right: 20px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .list {
@@ -177,6 +177,10 @@ body {
   margin: 0;
 }
 
+.bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
 /* Features section */
 
 .feature-list {
@@ -302,15 +306,77 @@ body {
 
 /* Footer */
 
+.footer-main-nav {
+  display: flex;
+  align-items: start;
+}
+
+.footer-site-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-site-nav > .item {
+  min-width: 173px;
+}
+
+.footer-site-nav > .item + .item {
+  margin-left: 20px;
+}
+
+.footer-site-nav .subtitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer-site-nav > .auth-nav {
+  flex-direction: column;
+  margin-left: 63px;
+}
+
+.button.margin-bottom {
+  margin-bottom: 16px;
+}
+
+.social-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .copyright {
+  margin: 0;
   font-size: 15px;
   line-height: 1.6;
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
 .social > .label {
+  margin: 0;
+  margin-right: 20px;
   font-size: 15px;
   line-height: 1.6;
 }
+
+.social-list {
+  display: flex;
+}
+
+.social-list > .item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.social-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* ------------------ */
 
 .test-container {
   width: 1230px;
