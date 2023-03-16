@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product card with icons relative to the image and overlay</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/02-overlay.css" />
+  </head>
+  <body>
+    <a href="./index.html">Back to main</a>
+
+    <article class="product">
+      <div class="product-thumb">
+        <img src="./images/apples.jpg" alt="Apples" />
+
+        <!-- div not ul, so that you have less markup to parse -->
+        <div class="product-actions">
+          <button aria-label="To favorites" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#star"></use></svg>
+          </button>
+
+          <button aria-label="Write a review" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#edit"></use></svg>
+          </button>
+
+          <button aria-label="To bookmarks" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#home"></use></svg>
+          </button>
+        </div>
+
+        <!-- <div class="box-1"></div> -->
+        <!-- <div class="box-2"></div> -->
+      </div>
+
+      <div class="product-meta">
+        <h2 class="product-name">Red apples</h2>
+        <p class="product-price">Price: 100 credits</p>
+      </div>
+    </article>
+  </body>
+</html>
