@@ -8,5 +8,5 @@
 - Menu item with an underline
 - Card with overlay appearing
 - Modal Animation
-- Perspective: transform: perspective() vs perspective property -> [https://3dtransforms.desandro.com/perspective]
+- Perspective: transform: perspective() vs perspective property -> https://3dtransforms.desandro.com/perspective
 - A flop with a prospect. [Practice](https://3dtransforms.desandro.com/card-flip)
