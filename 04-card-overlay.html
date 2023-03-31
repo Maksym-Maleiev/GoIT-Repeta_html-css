@@ -9,6 +9,31 @@
     <link rel="stylesheet" href="./css/04-card-overlay.css" />
   </head>
   <body>
-    <a href="./index.html">Back to main</a>
+    <a href="./index.html">Back to main</a><br />
+
+    <article class="product">
+      <div class="product-thumb">
+        <img src="./images/apples.jpg" alt="Apples" />
+
+        <div class="product-actions">
+          <button aria-label="To favorites" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#star"></use></svg>
+          </button>
+
+          <button aria-label="Write a review" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#edit"></use></svg>
+          </button>
+
+          <button aria-label="To bookmarks" class="item">
+            <svg class="icon"><use href="./images/sprite.svg#home"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-meta">
+        <h2 class="product-name">Red apples</h2>
+        <p class="product-price">Price: 100 credits</p>
+      </div>
+    </article>
   </body>
 </html>
