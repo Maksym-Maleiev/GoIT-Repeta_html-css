@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transitions and animations</title>
     <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      .scene {
+        width: 300px;
+        height: 300px;
+        outline: 2px solid #ccc;
+
+        perspective: 600px;
+      }
+
+      .box {
+        height: 100%;
+        width: 100%;
+        background-color: teal;
+
+        transform: scale(0);
+        transition: transform 500ms linear;
+      }
+
+      .scene:hover .box {
+        transform: scale(1) rotate(360deg);
+      }
+    </style>
   </head>
   <body>
     <ul>
@@ -28,5 +51,9 @@
         <a href="./06-perspective.html">Flip with perspective</a>
       </li>
     </ul>
+
+    <div class="scene">
+      <div class="box"></div>
+    </div>
   </body>
 </html>
