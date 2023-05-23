@@ -15,74 +15,103 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form class="js-speaker-form" autocomplete="off">
+    <form class="form js-speaker-form">
       <!-- Enter name, tel and email -->
 
-      <label for="name">Name</label>
-      <input type="text" name="user-name" id="name" autofocus />
-      <br />
-      <label for="tel">Tel</label>
-      <input type="tel" name="tel" id="tel" />
-      <br />
-      <label for="mail">Email</label>
-      <input type="email" name="email" id="mail" />
-      <br />
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" name="user-name" id="name" placeholder="Boris Johnson" autofocus />
+      </div>
+
+      <div class="form-field">
+        <label for="tel">Tel</label>
+        <input type="tel" name="tel" id="tel" placeholder="+38(099)-00-00-000" />
+      </div>
+
+      <div class="form-field">
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="mail" placeholder="johnson@mail.com" />
+      </div>
 
       <!-- Choose the topics on which you want to make a report -->
 
-      <div role="group">
-        <input type="checkbox" name="topic" value="html" id="html" checked />
-        <label for="html">HTML</label>
+      <div role="group" class="group">
+        <h2 class="group-title">Tools</h2>
 
-        <input type="checkbox" name="topic" value="css" id="css" checked />
-        <label for="css">CSS</label>
+        <ul class="topic-options">
+          <li>
+            <input type="checkbox" name="topic" value="html" id="html" checked />
+            <label for="html">HTML</label>
+          </li>
 
-        <input type="checkbox" name="topic" value="js" id="js" />
-        <label for="js">JavaScript</label>
+          <li>
+            <input type="checkbox" name="topic" value="css" id="css" checked />
+            <label for="css">CSS</label>
+          </li>
+
+          <li>
+            <input type="checkbox" name="topic" value="js" id="js" />
+            <label for="js">JavaScript</label>
+          </li>
+        </ul>
       </div>
 
       <!-- Choose your developer level -->
 
-      <div role="group">
-        <input type="radio" name="level" value="junior" id="jun" checked />
-        <label for="jun">Junior</label>
+      <div role="group" class="group">
+        <h2 class="group-title">Experience</h2>
 
-        <input type="radio" name="level" value="middle" id="mid" />
-        <label for="mid">Middle</label>
+        <ul class="experience-options">
+          <li>
+            <input type="radio" name="level" value="junior" id="jun" checked />
+            <label for="jun">Junior</label>
+          </li>
 
-        <input type="radio" name="level" value="senior" id="sen" />
-        <label for="sen">Senior</label>
+          <li>
+            <input type="radio" name="level" value="middle" id="mid" />
+            <label for="mid">Middle</label>
+          </li>
+
+          <li>
+            <input type="radio" name="level" value="senior" id="sen" />
+            <label for="sen">Senior</label>
+          </li>
+        </ul>
       </div>
 
       <!-- Choose the time of the report https://cantuse.com/#search=datetime-local -->
 
-      <label for="date">Date</label>
-      <input
-        type="datetime-local"
-        name="date"
-        id="date"
-        min="2023-05-20T15:45"
-        max="2023-05-22T20:45"
-      />
-      <br />
+      <div class="form-field">
+        <label for="date">Date</label>
+        <input type="datetime-local" name="date" id="date" class="date" />
+      </div>
 
       <!-- Loading the presentation -->
 
-      <label for="pdf">Loading the presentation</label>
-      <input type="file" name="pfd" id="pdf" />
-      <br />
+      <div class="form-field">
+        <label for="pdf">Loading the presentation</label>
+        <input type="file" name="pfd" id="pdf" />
+      </div>
 
       <!-- Leave comments -->
 
-      <label for="comment">Leave comment</label>
-      <textarea name="comment" id="comment" rows="8"></textarea>
-      <br />
+      <div class="form-field">
+        <label for="comment">Leave comment</label>
+        <textarea
+          class="comment"
+          name="comment"
+          id="comment"
+          rows="8"
+          placeholder="Your comment"
+        ></textarea>
+      </div>
 
       <!-- We confirm the privacy policy -->
 
-      <input type="checkbox" name="policy" id="policy" />
-      <label for="policy">I agree to everything</label>
-      <br />
+      <div class="form-field policy">
+        <input type="checkbox" name="policy" id="policy" />
+        <label for="policy">I agree to everything</label>
+      </div>
 
       <button type="submit">Submit</button>
     </form>
