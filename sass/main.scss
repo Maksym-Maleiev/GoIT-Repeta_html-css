@@ -1,1 +1,74 @@
-@import "./vars";
+// @import "./utils/variables";
+// @import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+// @import "./base/normalize";
+// @import "./components/page-header";
+// @import "./components/logo";
+
+// .notification-error {
+//   @extend %notification;
+//   color: red;
+// }
+
+// .notification-success {
+//   @extend %notification;
+//   color: green;
+// }
+
+// .features {
+//   @extend %list;
+// }
+
+// p {
+//   @include bordered();
+// }
+
+// div {
+//   @include bordered(teal, dashed);
+// }
+
+// p {
+//   @include centeredFlex();
+// }
+
+// div {
+//   @include centeredFlex();
+// }
+
+// button {
+//   @include centeredFlex(inline-flex);
+// }
+
+// .icon {
+//   width: 100px;
+//   height: 100px;
+// }
+
+// .icon-facebook {
+//   background-image: url("../images/facebook.svg");
+// }
+
+// .icon-github {
+//   background-image: url("../images/github.svg");
+// }
+
+// .icon-linkedin {
+//   background-image: url("../images/linkedin.svg");
+// }
+
+// .icon-twitter {
+//   background-image: url("../images/twitter.svg");
+// }
+
+$icons: "facebook", "github", "linkedin", "twitter";
+
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .icon-#{$iconName} {
+      background-image: url("../images/#{$iconName}.svg");
+    }
+  }
+}
+
+@include generateIcons($icons);
