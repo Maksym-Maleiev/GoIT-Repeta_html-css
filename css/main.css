@@ -1,1 +1,15 @@
-/*# sourceMappingURL=main.css.map */
+.icon-facebook {
+  background-image: url("../images/facebook.svg");
+}
+
+.icon-github {
+  background-image: url("../images/github.svg");
+}
+
+.icon-linkedin {
+  background-image: url("../images/linkedin.svg");
+}
+
+.icon-twitter {
+  background-image: url("../images/twitter.svg");
+}/*# sourceMappingURL=main.css.map */
