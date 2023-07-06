@@ -61,14 +61,8 @@
 //   background-image: url("../images/twitter.svg");
 // }
 
-$icons: "facebook", "github", "linkedin", "twitter";
+$socialIcons: "facebook", "github", "linkedin", "twitter";
+$techIcons: "html", "css", "js";
 
-@mixin generateIcons($iconList) {
-  @each $iconName in $iconList {
-    .icon-#{$iconName} {
-      background-image: url("../images/#{$iconName}.svg");
-    }
-  }
-}
-
-@include generateIcons($icons);
+@include generateIcons($socialIcons);
+@include generateIcons($techIcons);
