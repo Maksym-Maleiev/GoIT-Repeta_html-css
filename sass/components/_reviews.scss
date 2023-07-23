@@ -1,18 +1,45 @@
 .reviews {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .reviews-set {
   @extend %list;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
 }
 
 .reviews-item {
-  text-align: center;
+  flex-basis: calc((100% - 3 * 10px) / 3);
+  margin-top: 10px;
+  margin-left: 10px;
   padding: 40px;
+
+  text-align: center;
   color: #fff;
   font-size: 48px;
+
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    border: 20px solid rgba(0, 0, 0, 0.25);
+  }
+
+  @media screen and (min-width: 1140px) {
+    flex-basis: calc((100% - 3 * 20px) / 3);
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-size: 64px;
+  }
 }
 
 $colors: "#795548", "#607D8B", "#7B1FA2";
