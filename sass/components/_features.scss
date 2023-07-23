@@ -7,6 +7,11 @@
     margin-top: -10px;
     margin-left: -10px;
   }
+
+  @media screen and (min-width: 1140px) {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
 }
 
 .features-item {
@@ -23,7 +28,9 @@
   }
 
   @media screen and (min-width: 1140px) {
-    flex-basis: calc((100% - 3 * 10px) / 3);
+    flex-basis: calc((100% - 3 * 20px) / 3);
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   &:not(:last-child) {
