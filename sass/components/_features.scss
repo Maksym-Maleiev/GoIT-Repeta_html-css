@@ -17,19 +17,19 @@
   font-size: 32px;
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 10px);
+    flex-basis: calc((100% - 2 * 10px) / 2);
     margin-top: 10px;
     margin-left: 10px;
   }
 
   @media screen and (min-width: 1140px) {
-    flex-basis: calc(100% / 3 - 10px);
+    flex-basis: calc((100% - 3 * 10px) / 3);
   }
-}
 
-@media screen and (max-width: 767px) {
-  .features-item:not(:last-child) {
-    margin-bottom: 10px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
   }
 }
 
