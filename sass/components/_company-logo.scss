@@ -6,4 +6,9 @@
   font-weight: 500;
   background-color: #03a9f4;
   color: #fff;
+
+  &:hover,
+  &:focus {
+    background-color: teal;
+  }
 }
