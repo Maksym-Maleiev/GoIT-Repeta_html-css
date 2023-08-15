@@ -3,7 +3,7 @@
 - Responsive Images
   - Base images and 100% width problem
   - Responsive image styles (max-width)
-  - [Screen pixel density](https://www.mydevice.to/) and retinization
+  - [Screen pixel density](https://www.mydevice.io/) and retinization
 - Responsive `<img>` element
   - Pixel density simulation in devtools
   - `srcset` attribute
